@@ -1,0 +1,16 @@
+/home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/matrixMul Starting...
+
+
+Using Matrix Sizes: A(480 x 480), B(480 x 480), C(480 x 480)
+
+Run Kernels...
+
+matrixMul, Throughput = 176.7919 GFlop/s, Time = 0.00125 s, Size = 221184000 Ops, NumDevsUsed = 1, Workgroup = 1024
+
+Check against Host computation...
+
+PASSED 
+
+
+Press <Enter> to Quit...
+-----------------------------------------------------------

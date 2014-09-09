@@ -1,0 +1,19 @@
+/home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/transpose Starting...
+
+> Device 0: "Tesla C2050"
+> SM Capability 2.0 detected:
+> CUDA device has 14 Multi-Processors
+> SM performance scaling factor = 1.71
+
+Matrix size: 800x800 (50x50 tiles), tile size: 16x16, block size: 16x16
+
+
+transpose-Outer-optimized         , Throughput = 1.4924 GB/s, Time = 3.19509 s, Size = 640000 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose-Inner-optimized         , Throughput = 201.9673 GB/s, Time = 0.02361 s, Size = 640000 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+
+PASSED
+
+
+Press <Enter> to Quit...
+-----------------------------------------------------------
+

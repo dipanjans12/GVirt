@@ -1,0 +1,78 @@
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaGetDeviceCount (id = 9)
+<5> nvbackCudaGetDeviceCount_rpc[457]: CUDA_ERROR=30 before RPC on method 9
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 9, reqbuf (nil), reqbuf_size 0, rspbuf (nil), rspbuf_size 0
+<5> conn_connect[127]: Socket = 3
+INFO <4> l_do_cuda_rpc[341]: Connection to host: 
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+DEBUG <5> l_do_cuda_rpc[409]: received response header. Expecting 1 packets and extra response size of 0 in response batch
+INFO <4> l_do_cuda_rpc[418]: Received response batch. 1 packets
+INFO <4> rcudaGetDeviceCount[500]:  __OK__ the number of devices is 2. Got from the RPC call
+>>>>>>>>>> Implemented >>>>>>>>>>: r__cudaRegisterFatBinary (id = 33)
+DEBUG <5> l_getFatRecPktSize[470]: Here!!!!!!!
+DEBUG <5> r__cudaRegisterFatBinary[2774]: FatCubin size: 4046
+DEBUG <5> r__cudaRegisterFatBinary[2793]: pPackedFat, pPacket->args[0].argp = 0x1428000, 4046
+DEBUG <5> __nvback_cudaRegisterFatBinary_rpc[659]: CUDA_ERROR=30 before RPC on method 33
+DEBUG <5> __nvback_cudaRegisterFatBinary_rpc[662]: pPackedFat, packet->args[0].argp, size = 0x1428000, 4046
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 33, reqbuf 0x1428000, reqbuf_size 4046, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 4046.
+DEBUG <5> l_do_cuda_rpc[384]: Request buffer sent (4046 bytes).
+DEBUG <5> l_do_cuda_rpc[409]: received response header. Expecting 1 packets and extra response size of 0 in response batch
+INFO <4> l_do_cuda_rpc[418]: Received response batch. 1 packets
+DEBUG <5> l_do_cuda_rpc[424]: FAT CUBIN HANDLE: registered 0x167b0c0.
+DEBUG <5> r__cudaRegisterFatBinary[2800]: Returned fatCubinHandle = 0x167b0c0
+>>>>>>>>>> Implemented >>>>>>>>>>: r__cudaRegisterFunction (id = 34)
+<5> l_printRegFunArgs[640]: 	 REG FUN ARGS:
+<5> l_printRegFunArgs[641]: fatCubinHandle: 0x167b0c0
+<5> l_printRegFunArgs[642]: hostFun: 0x401e09
+<5> l_printRegFunArgs[643]: deviceFun: _Z6kernelPf
+<5> l_printRegFunArgs[644]: deviceName: _Z6kernelPf
+<5> l_printRegFunArgs[645]: thread_limit: -1
+<5> l_printRegFunArgs[646]: tid: (nil)
+<5> l_printRegFunArgs[649]: bid: (nil)
+<5> l_printRegFunArgs[652]: bDim: (nil)
+<5> l_printRegFunArgs[655]: gDim: (nil)
+<5> l_printRegFunArgs[659]: wSize: (nil)
+DEBUG <5> __nvback_cudaRegisterFunction_rpc[672]: CUDA_ERROR=30 before RPC on method 34
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 34, reqbuf 0x1427050, reqbuf_size 133, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 133.
+DEBUG <5> l_do_cuda_rpc[384]: Request buffer sent (133 bytes).
+DEBUG <5> l_do_cuda_rpc[409]: received response header. Expecting 1 packets and extra response size of 0 in response batch
+INFO <4> l_do_cuda_rpc[418]: Received response batch. 1 packets
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaMalloc (id = 1)
+
+devPtr 0x7fffd1ebd288, *devPtr 0x401f45, size 4000
+DEBUG <5> nvbackCudaMalloc_rpc[514]: CUDA_ERROR=30 before RPC on method 1
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 1, reqbuf (nil), reqbuf_size 0, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+DEBUG <5> l_do_cuda_rpc[409]: received response header. Expecting 1 packets and extra response size of 0 in response batch
+INFO <4> l_do_cuda_rpc[418]: Received response batch. 1 packets
+DEBUG <5> nvbackCudaMalloc_rpc[520]: nvbackCudaMalloc_rpc: devPtr is 0x200200000<4> rcudaMalloc[1305]: rcudaMalloc: __OK__:  Return from the RPC call DevPtr 0x200200000
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaConfigureCall (id = 13)
+<5> nvbackCudaConfigureCall_rpc[538]: CUDA_ERROR=30 before RPC on method 13
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 13, reqbuf (nil), reqbuf_size 0, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaSetupArgument (id = 7)
+<5> nvbackCudaSetupArgument_rpc[527]: CUDA_ERROR=30 before RPC on method 7
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 7, reqbuf 0x7fffd1ebc288, reqbuf_size 8, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 8.
+DEBUG <5> l_do_cuda_rpc[384]: Request buffer sent (8 bytes).
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaLaunch (id = 8)
+rcudaLaunch, entry: UH‰åHƒìH‰}øH‹EøH‰Çè•ÿÿÿÉÃUH‰åSHƒì(¿`:`
+DEBUG <5> nvbackCudaLaunch_rpc[548]: CUDA_ERROR=30 before RPC on method 8
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 8, reqbuf (nil), reqbuf_size 0, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaMemcpy (id = 65535)
+DEBUG <5> nvbackCudaMemcpy_rpc[559]: Packet content: args[0].argp (dst)= 0x7fffd1ebc2e0, args[1].argp (src)= 0x200200000
+DEBUG <5> nvbackCudaMemcpy_rpc[560]: args[2].argi=4000, args[3].argi=2
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 4, reqbuf (nil), reqbuf_size 0, rspbuf 0x7fffd1ebc2e0, rspbuf_size 4000
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+DEBUG <5> l_do_cuda_rpc[409]: received response header. Expecting 1 packets and extra response size of 4000 in response batch
+INFO <4> l_do_cuda_rpc[418]: Received response batch. 1 packets
+<5> rcudaMemcpy[1665]: rcudaMemcpy: __OK__ Return from RPC.
+>>>>>>>>>> Implemented >>>>>>>>>>: r__cudaUnregisterFatBinary (id = 38)
+DEBUG <5> __nvback_cudaUnregisterFatBinary_rpc[690]: CUDA_ERROR=30 before RPC on method 38
+DEBUG <5> l_do_cuda_rpc[328]: MethodID: 38, reqbuf (nil), reqbuf_size 0, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+DEBUG <5> r__cudaUnregisterFatBinary[2888]: __OK__ Return from rpc with ok value.
+DEBUG <5> nullDebugChkpt[2463]: g_vars_remove: The pointer is NULL. regHostVarsTab
+ 

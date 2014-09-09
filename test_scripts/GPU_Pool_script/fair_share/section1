@@ -1,0 +1,5 @@
+(time echo '\n' | /home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/BlackScholes_8192 0 >/dev/null 2>/dev/null) > /dev/null &
+(time echo '\n' | /home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/dxtc 0 >/dev/null 2>/dev/null) > /dev/null &
+(time echo '\n' | /home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/histogram 0 >/dev/null 2>/dev/null) > /dev/null &
+(time echo '\n' | /home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/eigenvalues 0 >/dev/null 2>/dev/null) > /dev/null &
+(time echo '\n' | /home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/matrixMul 0 >/dev/null 2>/dev/null) > /dev/null &

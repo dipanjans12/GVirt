@@ -1,0 +1,17 @@
+
+completed all nodes but sched node
+>>>>>>>>>> Implemented >>>>>>>>>>: rcudaGetDeviceCount (id = 9)
+<5> nvbackCudaGetDeviceCount_rpc[436]: CUDA_ERROR=30 before RPC on method 9
+DEBUG <5> l_do_cuda_rpc[307]: MethodID: 9, reqbuf (nil), reqbuf_size 0, rspbuf (nil), rspbuf_size 0
+<5> conn_connect[127]: Socket = 6
+INFO <4> l_do_cuda_rpc[320]: Connection to host: 
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 0.
+WARNING <2> rcudaGetDeviceCount[505]: __ERROR__ Return from rpc with the wrong return value.
+>>>>>>>>>> Implemented >>>>>>>>>>: r__cudaRegisterFatBinary (id = 33)
+DEBUG <5> l_getFatRecPktSize[470]: Here!!!!!!!
+DEBUG <5> r__cudaRegisterFatBinary[2773]: FatCubin size: 62907
+DEBUG <5> r__cudaRegisterFatBinary[2792]: pPackedFat, pPacket->args[0].argp = 0xff1a50, 62907
+DEBUG <5> __nvback_cudaRegisterFatBinary_rpc[638]: CUDA_ERROR=30 before RPC on method 33
+DEBUG <5> __nvback_cudaRegisterFatBinary_rpc[641]: pPackedFat, packet->args[0].argp, size = 0xff1a50, 62907
+DEBUG <5> l_do_cuda_rpc[307]: MethodID: 33, reqbuf 0xff1a50, reqbuf_size 62907, rspbuf (nil), rspbuf_size 0
+DEBUG <5> conn_sendCudaPktHdr[46]: Header sent: pkt_num 1, extra buffer size: 62907.

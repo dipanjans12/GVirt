@@ -1,0 +1,27 @@
+/home/dipanjans/Cuda_Sdk_3.2/NVIDIA_GPU_Computing_SDK/C/bin/linux/release/BlackScholes_8192 Starting...
+
+Initializing data...
+...allocating CPU memory for options.
+...allocating GPU memory for options.
+...generating input data in CPU mem.
+...copying input data to GPU mem.
+Data init done.
+
+Executing Black-Scholes GPU kernel (8192 iterations)...
+Options count             : 8000000     
+BlackScholesGPU() time    : 3.982668 msec
+Effective memory bandwidth: 20.087036 GB/s
+Gigaoptions per second    : 2.008704     
+
+BlackScholes, Throughput = 2.0087 GOptions/s, Time = 0.00398 s, Size = 8000000 options, NumDevsUsed = 1, Workgroup = 128
+
+Reading back GPU results...
+Shutting down...
+...releasing GPU memory.
+...releasing CPU memory.
+Shutdown done.
+PASSED
+
+
+Press <Enter> to Quit...
+-----------------------------------------------------------

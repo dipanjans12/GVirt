@@ -1,0 +1,26 @@
+# 6 Blacksholes on 2 GPUs - same type apps
+19.226
+19.061
+20.081
+43.387
+45.388
+47.291
+
+# 4 BS1024 and 4 BS8192 - ratio 8:1 on both nodes
+
+[dipanjans@ifrit GPU_Pool_script]$ ./cfs_testing.sh 
+6.441
+12.216
+7.675
+13.351
+[dipanjans@ifrit GPU_Pool_script]$ 
+
+
+
+[dipanjans@shiva GPU_Pool_script]$ ./cfs_testing.sh 
+46.512
+55.509
+119.342
+121.242
+[dipanjans@shiva GPU_Pool_script]$ 
+
